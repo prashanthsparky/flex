@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiggy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Header section */
+        header {
+            background-color: orange;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            margin-left: 15px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        /* hero section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: #ffe0cc;
+            padding: 20px;
+        }
+
+        .hero-text {
+            flex: 1 1 300px;
+            /* flex-grow: 1;
+           flex-shrink: 1;
+           flex-basis: 300px; */
+        }
+        
+        .hero-text button {
+            padding: 8px 12px;
+            background: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Menu section */
+        .menu{
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-items{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card{
+            border: 1px solid whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            flex: 1 1 200px;
+            max-width: 200px;
+        }
+       .junk-food{
+            width: 100%;
+            height: 200px;
+        }
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/swiggy_logo.png" alt="swiggyLogo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- this Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Delicious Food, Delivered Fast 🍕</h1>
+            <p>Order your favorite meals and get them delivered right to your doorsteps in minutes.</p>
+            <button>Order Now</button>
+        </div>
+        <img class="food-img" src="./images/food_side.jpeg" alt="Food Delivery">
+    </div>
+    <!-- Menu section -->
+    <div class="menu">
+        <h2>Our Popular Dishs</h2>
+    </div>
+    <div>
+        <div class="menu-items">
+            <div class="card">
+                <img class="junk-food" src="./images/pizza.jpg" alt="Pizaa-image">
+                <h3>Pizza</h3>
+                <p>₹100</p>
+            </div>
+            <div class="card">
+                <img class="junk-food" src="./images/burger.jpg" alt="Pizaa-image">
+                <h3>Burger</h3>
+                <p>₹100</p>
+            </div>
+            <div class="card">
+                <img class="junk-food" src="./images/pasta.jpg" alt="Pizaa-image">
+                <h3>Pasta</h3>
+                <p>₹100</p>
+            </div>
+            <div class="card">
+                <img class="junk-food" src="./images/Salad.jpg" alt="Pizaa-image">
+                <h3>Salad</h3>
+                <p>₹100</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <div>
+            <h4>About Us</h4>
+            <p>We deliver delicious food to your doorstep quickly and safely.</p>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Email: support@foodie.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+
+        <div>
+            <h4>Follow Us</h4>
+            <p>Facebook | Instagram | Twitter</p>
+        </div>
+    </footer>
+</body>
+
+</html>
